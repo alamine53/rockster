@@ -1,0 +1,147 @@
+[
+    {
+    "filename": "2025-09 MCC TERM - Arthritis Centers of Texas.xlsx",
+    "sheet_name": "Provider Roster",
+    "mapping_file": "act_mapping.csv",
+    "contract_id": "C004",
+    "contracting_entity": "Aspen Physician Network",
+    "outfile": "ACT_terms.csv"
+    },
+    {
+    "filename": "2025-09 MCC TERM - Austin Reddick Dermatology.xlsx",
+    "sheet_name": "Provider Roster",
+    "mapping_file": "austin_reddick_mapping.csv",
+    "contract_id": "C003",
+    "contracting_entity": "Austin & Reddick Dermatology, PLLC",
+    "outfile": "austin_reddick_terms.csv"
+},
+{
+    "filename": "HTPN TERMED PROVIDERS AUGUST2025_09022025.xlsx",
+    "sheet_name": "Table_1",
+    "mapping_file": "htpn_mapping_terms.csv",
+    "contract_id": "C010",
+    "contracting_entity": "Baylor Scott and White Health",
+    "outfile": "HTPN_august_terms.csv"
+},
+{
+    "filename": "HTPN TERMED PROVIDERS JULY2025_08042025.xlsx",
+    "sheet_name": "Table_1",
+    "mapping_file": "htpn_mapping_terms.csv",
+    "contract_id": "C010",
+    "contracting_entity": "Baylor Scott and White Health",
+    "outfile": "HTPN_july_terms.csv"
+},
+{
+    "filename": "2025-08-14 HTPN New Provider Adds - Mark Cuban.xlsx",
+    "sheet_name": "Mark Cuban",
+    "mapping_file": "htpn_mapping_adds.csv",
+    "contract_id": "C010",
+    "contracting_entity": "Baylor Scott and White Health",
+    "outfile": "HTPN_august_adds.csv"
+},
+{
+    "filename": "9-12-2025-PPN Payor Tracker-Termination Notifications.xlsx",
+    "sheet_name": "Sheet 1",
+    "mapping_file": "ppn_mapping_terms.csv",
+    "contract_id": "C007",
+    "contracting_entity": "Patient Physician Network",
+    "outfile": "PPN_0912_terms.csv"
+},
+{
+    "filename": "9-12-2025-PPN-MCC Health Provider Delegated Information-Opt Ins.xlsx",
+    "sheet_name": "Sheet 1",
+    "mapping_file": "ppn_mapping_adds.csv",
+    "contract_id": "C007",
+    "contracting_entity": "Patient Physician Network",
+    "outfile": "PPN_0912_adds.csv"
+},
+{
+    "filename": "8-25-2025-PPN Payor Tracker-Termination Notifications.xlsx",
+    "sheet_name": "Sheet 1",
+    "mapping_file": "ppn_mapping_terms.csv",
+    "contract_id": "C007",
+    "contracting_entity": "Patient Physician Network",
+    "outfile": "PPN_0825_terms.csv"
+},
+{
+    "filename": "8-11-2025-PPN Payor Tracker-Termination Notifications.xlsx",
+    "sheet_name": "Sheet 1",
+    "mapping_file": "ppn_mapping_terms.csv",
+    "contract_id": "C007",
+    "contracting_entity": "Patient Physician Network",
+    "outfile": "PPN_0811_terms.csv"
+},
+{
+    "filename": "8-25-2025-PPN-MCC Health Provider Delegated Information-Opt Ins.xlsx",
+    "sheet_name": "Sheet 1",
+    "mapping_file": "ppn_mapping_adds.csv",
+    "contract_id": "C007",
+    "contracting_entity": "Patient Physician Network",
+    "outfile": "PPN_0825_adds.csv"
+},
+{
+    "filename": "8-11-2025-PPN-MCC Health Provider Delegated Information-Opt Ins.xlsx",
+    "sheet_name": "Sheet 1",
+    "mapping_file": "ppn_mapping_adds.csv",
+    "contract_id": "C007",
+    "contracting_entity": "Patient Physician Network",
+    "outfile": "PPN_0811_adds.csv"
+},
+{
+    "filename": "2025-08 Mark Cuban HP USDP Full Provider Roster.xlsx",
+    "sheet_name": "TERMS",
+    "mapping_file": "usderm_mapping.csv",
+    "contract_id": "C004",
+    "contracting_entity": "Oliver Street 5.01(A) Inc",
+    "outfile": "USDERM_august_terms.csv"
+},
+{
+    "filename": "2025-08 Mark Cuban HP USDP Full Provider Roster.xlsx",
+    "sheet_name": "ADDS",
+    "mapping_file": "usderm_mapping.csv",
+    "contract_id": "C004",
+    "contracting_entity": "Oliver Street 5.01(A) Inc",
+    "outfile": "USDERM_august_adds.csv"
+},
+{
+    "filename": "CP-Wellness Sent to Ryan 8-27-25 (CHECKED).xlsx",
+    "sheet_name": "Individual",
+    "mapping_file": "spa_mapping_groups.csv",
+    "contract_id": "C012",
+    "contracting_entity": "Southwest Physician Associates",
+    "outfile": "SPA_827_individuals.csv"
+},
+{
+    "filename": "CP-Wellness Sent to Ryan 8-27-25 (CHECKED).xlsx",
+    "sheet_name": "Groups",
+    "mapping_file": "spa_mapping_groups.csv",
+    "contract_id": "C012",
+    "contracting_entity": "Southwest Physician Associates",
+    "outfile": "SPA_827_groups.csv"
+},
+{
+    "filename": "CP-Wellness Sent to Ryan 8-27-25 (CHECKED).xlsx",
+    "sheet_name": "New Add's",
+    "mapping_file": "spa_mapping_groups.csv",
+    "contract_id": "C012",
+    "contracting_entity": "Southwest Physician Associates",
+    "outfile": "SPA_827_newadds.csv"
+},
+{
+    "filename": "CP-Wellness Sent to Ramzy 9-11-25 (CHECKED).xlsx",
+    "sheet_name": "Groups",
+    "mapping_file": "spa_mapping_groups.csv",
+    "contract_id": "C012",
+    "contracting_entity": "Southwest Physician Associates",
+    "outfile": "SPA_911_groups.csv"
+    },
+    {
+    "filename": "CP-Wellness Sent to Ramzy 9-11-25 (CHECKED).xlsx",
+    "sheet_name": "Individuals",
+    "mapping_file": "spa_mapping_groups.csv",
+    "contract_id": "C012",
+    "contracting_entity": "Southwest Physician Associates",
+    "outfile": "SPA_911_individuals.csv"
+    }
+    
+]

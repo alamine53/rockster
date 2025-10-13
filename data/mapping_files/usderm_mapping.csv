@@ -1,0 +1,40 @@
+﻿provider_npi,Individual NPI
+first_name,First Name
+middle_name,
+middle_initial,MI
+last_name,Last Name
+full_name,
+degree,Degree
+dob,DOB
+gender,Gender
+specialty_1,Specialty 1
+specialty_2,Specialty 2
+specialty_3,Specialty 3
+taxonomy_1,Taxonomy 1
+taxonomy_2,Taxonomy 2
+taxonomy_3,Taxonomy 3
+provider_type,PCP SPC
+primary_address,Primary Location 
+address_line1,Practice Street Address
+address_line2,Practice Address 2
+city,Practice City
+state,Practice State
+zip_code,Practice Zip Code
+phone,PrimaryPractice Phone
+fax,Practice Fax
+billing_npi,Type 2 NPI
+billing_address_line1,Billing Street Address
+billing_address_line2,billing_address_line2
+billing_city,Billing City
+billing_state,Billing State
+billing_zip,Billing Zip Code
+tax_id,TIN
+practice_name,DBA Practice Name
+practice_url,Practice URL
+pay_to_name,Legal/ W-9 Name
+effective_date,EFF DATE
+pcp_provider,
+provider_role,PCP SPC
+billing_contact_email,Contact Email
+action,ACTION/ EFFECTIVE DATE / CHANGE OR TERM REASON
+note,note

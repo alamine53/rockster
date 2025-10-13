@@ -1,0 +1,11 @@
+{
+"data_dir": "data",
+"filename": "2025-08-14 HTPN New Provider Adds - Mark Cuban.xlsx",
+"sheet_name": "Mark Cuban",
+"mapping_file": "htpn_mapping_adds.csv",
+"contract_id": "C010",
+"contracting_entity": "Baylor Scott and White Health",
+"action": "add",
+"effective_date": "2025-10-01",
+"outfile": "HTPN_august_adds.csv"
+}

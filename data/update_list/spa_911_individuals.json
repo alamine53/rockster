@@ -1,0 +1,12 @@
+{
+    "data_dir": "data",
+    "filename": "CP-Wellness Sent to Ramzy 9-11-25.xlsx",
+    "sheet_name": "Individuals",
+    "mapping_file": "spa_mapping_groups.csv",
+    "contract_id": "C012",
+    "contracting_entity": "Southwest Physician Associates",
+    "action": "add",
+    "effective_date": "2025-10-01",
+    "outfile": "SPA_911_individuals.csv"
+    }
+    

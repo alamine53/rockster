@@ -1,0 +1,282 @@
+[
+    {
+    "filename": "HTPN New Provider Adds - Mark Cuban (9-19-25).xlsx",
+    "sheet_name": "Mark Cuban",
+    "mapping_file": "htpn_mapping_adds.csv",
+    "contract_id": "C010",
+    "action": "add",
+    "note": "",
+    "tag": "BSWH_HTPN"
+    },
+    {
+    "filename": "MCHP USDP Full Provider Roster.xlsx",
+    "sheet_name": "ADD TERMS CHANGES",
+    "mapping_file": "usderm_mapping.csv",
+    "contract_id": "C006",
+    "action": "add & term",
+    "note": "",
+    "tag": "USDERM"
+    },
+    {
+    "filename": "Managed Care Provider Update 07.11.25.xlsx",
+    "sheet_name": "NEW PROVIDERS",
+    "mapping_file": "ctx_mapping_adds.csv",
+    "contract_id": "C010",
+    "action": "add",
+    "note": "retroactive from missed July updates",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 07.11.25.xlsx",
+    "sheet_name": "TERM PROVIDERS",
+    "mapping_file": "ctx_mapping_terms.csv",
+    "contract_id": "C010",
+    "action": "term",
+    "note": "retroactive from missed July updates",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 07.18.25.xlsx",
+    "sheet_name": "NEW PROVIDERS",
+    "mapping_file": "ctx_mapping_adds.csv",
+    "contract_id": "C010",
+    "action": "add",
+    "note": "retroactive from missed July updates",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 07.18.25.xlsx",
+    "sheet_name": "TERM PROVIDERS",
+    "mapping_file": "ctx_mapping_terms.csv",
+    "contract_id": "C010",
+    "action": "term",
+    "note": "retroactive from missed July updates",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 07.25.25.xlsx",
+    "sheet_name": "NEW PROVIDERS",
+    "mapping_file": "ctx_mapping_adds.csv",
+    "contract_id": "C010",
+    "action": "add",
+    "note": "retroactive from missed July updates",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 07.25.25.xlsx",
+    "sheet_name": "TERM PROVIDERS",
+    "mapping_file": "ctx_mapping_terms.csv",
+    "contract_id": "C010",
+    "action": "term",
+    "note": "retroactive from missed July updates",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 08.01.25.xlsx",
+    "sheet_name": "NEW PROVIDERS",
+    "mapping_file": "ctx_mapping_adds.csv",
+    "contract_id": "C010",
+    "action": "add",
+    "note": "retroactive from missed August updates",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 08.01.25.xlsx",
+    "sheet_name": "TERM PROVIDERS",
+    "mapping_file": "ctx_mapping_terms.csv",
+    "contract_id": "C010",
+    "action": "term",
+    "note": "retroactive from missed August updates",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 08.08.25.xlsx",
+    "sheet_name": "NEW PROVIDERS",
+    "mapping_file": "ctx_mapping_adds.csv",
+    "contract_id": "C010",
+    "action": "add",
+    "note": "retroactive from missed August updates",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 08.08.25.xlsx",
+    "sheet_name": "TERM PROVIDERS",
+    "mapping_file": "ctx_mapping_terms.csv",
+    "contract_id": "C010",
+    "action": "term",
+    "note": "retroactive from missed August updates",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 08.15.25.xlsx",
+    "sheet_name": "NEW PROVIDERS",
+    "mapping_file": "ctx_mapping_adds.csv",
+    "contract_id": "C010",
+    "action": "add",
+    "note": "retroactive from missed August updates",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 08.15.25.xlsx",
+    "sheet_name": "TERM PROVIDERS",
+    "mapping_file": "ctx_mapping_terms.csv",
+    "contract_id": "C010",
+    "action": "term",
+    "note": "retroactive from missed August updates",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 08.22.25.xlsx",
+    "sheet_name": "NEW PROVIDERS",
+    "mapping_file": "ctx_mapping_adds.csv",
+    "contract_id": "C010",
+    "action": "add",
+    "note": "retroactive from missed August updates",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 08.22.25.xlsx",
+    "sheet_name": "TERM PROVIDERS",
+    "mapping_file": "ctx_mapping_adds.csv",
+    "contract_id": "C010",
+    "action": "term",
+    "note": "retroactive from missed August updates",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 08.29.25.xlsx",
+    "sheet_name": "NEW PROVIDERS",
+    "mapping_file": "ctx_mapping_adds.csv",
+    "contract_id": "C010",
+    "action": "add",
+    "note": "retroactive from missed August updates",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 08.29.25.xlsx",
+    "sheet_name": "TERM PROVIDERS",
+    "mapping_file": "ctx_mapping_terms.csv",
+    "contract_id": "C010",
+    "action": "term",
+    "note": "retroactive from missed August updates",
+    "tag": "BSWH_CTX"
+        },
+    {
+    "filename": "Managed Care Provider Update 09.05.25.xlsx",
+    "sheet_name": "NEW PROVIDERS",
+    "mapping_file": "ctx_mapping_adds.csv",
+    "contract_id": "C010",
+    "action": "add",
+    "note": "current month adds",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 09.05.25.xlsx",
+    "sheet_name": "TERM PROVIDERS",
+    "mapping_file": "ctx_mapping_terms.csv",
+    "contract_id": "C010",
+    "action": "term",
+    "note": "current month terms",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 09.12.25.xlsx",
+    "sheet_name": "NEW PROVIDERS",
+    "mapping_file": "ctx_mapping_adds.csv",
+    "contract_id": "C010",
+    "action": "add",
+    "note": "current month adds",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 09.12.25.xlsx",
+    "sheet_name": "TERM PROVIDERS",
+    "mapping_file": "ctx_mapping_terms.csv",
+    "contract_id": "C010",
+    "action": "term",
+    "note": "current month terms",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 09.19.25.xlsx",
+    "sheet_name": "NEW PROVIDERS",
+    "mapping_file": "ctx_mapping_adds.csv",
+    "contract_id": "C010",
+    "action": "add",
+    "note": "current month adds",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 09.19.25.xlsx",
+    "sheet_name": "TERM PROVIDERS",
+    "mapping_file": "ctx_mapping_terms.csv",
+    "contract_id": "C010",
+    "action": "term",
+    "note": "current month terms",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 09.26.25.xlsx",
+    "sheet_name": "NEW PROVIDERS",
+    "mapping_file": "ctx_mapping_adds.csv",
+    "contract_id": "C010",
+    "action": "add",
+    "note": "current month adds",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 09.26.25.xlsx",
+    "sheet_name": "TERM PROVIDERS",
+    "mapping_file": "ctx_mapping_terms.csv",
+    "contract_id": "C010",
+    "action": "term",
+    "note": "current month terms",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 10.03.25.xlsx",
+    "sheet_name": "NEW PROVIDERS",
+    "mapping_file": "ctx_mapping_adds.csv",
+    "contract_id": "C010",
+    "action": "add",
+    "note": "current month adds",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "Managed Care Provider Update 10.03.25.xlsx",
+    "sheet_name": "TERM PROVIDERS",
+    "mapping_file": "ctx_mapping_adds.csv",
+    "contract_id": "C010",
+    "action": "term",
+    "note": "current month terms",
+    "tag": "BSWH_CTX"
+    },
+    {
+    "filename": "MASTER THC Privia NTX Roster - all providers - all addresses 9.17.2025 (MOD).xlsx",
+    "sheet_name": "Sheet1",
+    "mapping_file": "privia_mapping.csv",
+    "contract_id": "C013",
+    "action": "add",
+    "note": "NEW CONTRACT",
+    "tag": "Privia NTX"
+    },
+    {
+    "filename": "TXO Provider Roster - July 2025 (MOD).xlsx",
+    "sheet_name": "Monthly Changes",
+    "mapping_file": "txo_mapping.csv",
+    "contract_id": "C001",
+    "action": "add & term",
+    "note": "previous months adds & terms",
+    "tag": "TXONCO"
+    },
+    {
+    "filename": "TXO Provider Roster - August 2025 (MOD).xlsx",
+    "sheet_name": "Monthly Changes",
+    "mapping_file": "txo_mapping.csv",
+    "contract_id": "C001",
+    "action": "add & term",
+    "note": "previous months adds & terms",
+    "tag": "TXONCO"
+    }    
+
+]

@@ -1,0 +1,8 @@
+action,effective_date,provider_npi,first_name,middle_initial,last_name,degree,specialty_1,tax_id,NPI_IN_ROSTER,TIN_IN_ROSTER,NPI_AND_TIN_IN_ROSTER,NPI_TIN_CID_MATCH,contract_id,note
+,,1003981044,Carla,A.,Gustovich (2),M.D.,Dermatology,,True,False,False,False,C012,
+,,1053337873,Rachel,H.,Quinby-Graves (2),M.D.,Dermatology,,True,False,False,False,C012,
+,,1184088601,Dema,,Alniemi,M.D.,Dermatology,,False,False,False,False,C012,
+,,1255521332,Rehan,,Shah,M.D.,Nephrology,,False,False,False,False,C012,
+,,1295993434,Prasanthi,,Jasty,M.D.,Infectious Disease,,False,False,False,False,C012,
+,,1699971473,Prathima,,Jasti,M.D.,Endocrinology,,False,False,False,False,C012,
+,,1891762753,Malik,A.,Saeed,M.D.,Internal Medicine (In-Patient Care Only),,False,False,False,False,C012,

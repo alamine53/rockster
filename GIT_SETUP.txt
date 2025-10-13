@@ -1,0 +1,177 @@
+================================================================================
+STEPS TO PUSH TO GITHUB
+================================================================================
+
+1. INITIALIZE GIT REPOSITORY (if not already done)
+   ------------------------------------------------
+   git init
+
+
+2. ADD REMOTE REPOSITORY
+   ----------------------
+   # Replace with your actual GitHub repository URL
+   git remote add origin https://github.com/yourusername/rockster.git
+   
+   # Or use SSH:
+   git remote add origin git@github.com:yourusername/rockster.git
+
+
+3. CHECK WHAT WILL BE COMMITTED
+   ------------------------------
+   git status
+   
+   # Preview what will be ignored
+   git status --ignored
+
+
+4. ADD FILES TO STAGING
+   ----------------------
+   # Add all files (respects .gitignore)
+   git add .
+   
+   # Check what's staged
+   git status
+
+
+5. COMMIT CHANGES
+   ----------------
+   git commit -m "Refactor: Modular pipeline with normalization, aggregation, and overlap checking"
+   
+   # Or use a more detailed commit message:
+   git commit -m "Refactor roster ingestion pipeline
+
+   - Reorganized into 3-stage pipeline (normalize, aggregate, overlap check)
+   - Added comprehensive formatting (states, zip codes, phones, PO boxes)
+   - Implemented overlap checking in normalized files
+   - Added 77 unit and integration tests
+   - Created checkpoint system for roster versioning
+   - Organized outputs by update month (output/YYYY-MM-name/)
+   "
+
+
+6. PUSH TO GITHUB
+   ----------------
+   # First time push (creates main branch)
+   git push -u origin main
+   
+   # Or if using 'master' branch:
+   git push -u origin master
+   
+   # Subsequent pushes:
+   git push
+
+
+================================================================================
+WHAT WILL BE IGNORED (per .gitignore)
+================================================================================
+
+✓ Python artifacts:
+  - __pycache__/
+  - *.pyc, *.pyo
+  - venv/
+  
+✓ Test artifacts:
+  - .pytest_cache/
+  - .coverage
+  - htmlcov/
+
+✓ IDE files:
+  - .vscode/
+  - .idea/
+  - *.swp
+
+✓ OS files:
+  - .DS_Store
+  - Thumbs.db
+
+✓ Data files:
+  - output/*/              (all output directories)
+  - data/*/processed/      (processed data)
+  - data/*/raw/            (raw roster files)
+  - rosters/checkpoints/   (checkpoint files)
+
+✓ Logs:
+  - *.log
+
+
+================================================================================
+WHAT WILL BE COMMITTED
+================================================================================
+
+✓ Source code:
+  - main.py
+  - checkpoint_roster.py
+  - utils.py
+  - constants.py
+  - src/*.py
+
+✓ Tests:
+  - tests/*.py
+  - pytest.ini
+
+✓ Configuration:
+  - configs/*.json
+  - data/mapping_files/*.csv
+  - .gitignore
+  - requirements.txt (if exists)
+
+✓ Documentation:
+  - README.md
+  - GIT_SETUP.txt
+
+
+================================================================================
+VERIFY BEFORE PUSHING
+================================================================================
+
+# See what files will be committed:
+git ls-files
+
+# See file sizes:
+git ls-files | xargs ls -lh
+
+# Make sure no large data files are included:
+git ls-files | xargs du -sh | sort -h
+
+
+================================================================================
+OPTIONAL: CREATE .gitkeep FILES FOR EMPTY DIRECTORIES
+================================================================================
+
+# Keep directory structure in git
+touch output/.gitkeep
+touch data/.gitkeep
+touch rosters/.gitkeep
+
+git add output/.gitkeep data/.gitkeep rosters/.gitkeep
+git commit -m "Add .gitkeep files for directory structure"
+
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+If you accidentally added large files:
+  git reset HEAD <file>
+  git checkout -- <file>
+
+If you need to remove a file from git but keep it locally:
+  git rm --cached <file>
+
+If you need to completely reset:
+  git reset --hard HEAD
+
+
+================================================================================
+CONTINUOUS UPDATES
+================================================================================
+
+After making changes:
+  1. git status                    # Check what changed
+  2. git add .                     # Stage all changes
+  3. git commit -m "Description"   # Commit with message
+  4. git push                      # Push to GitHub
+
+Quick one-liner (for small updates):
+  git add . && git commit -m "Update" && git push
+

@@ -1,0 +1,11 @@
+{
+    "data_dir": "data",
+    "filename": "8-25-2025-PPN-MCC Health Provider Delegated Information-Opt Ins.xlsx",
+    "sheet_name": "Sheet 1",
+    "mapping_file": "ppn_mapping_adds.csv",
+    "contract_id": "C007",
+    "contracting_entity": "Patient Physician Network",
+    "action": "add",
+    "effective_date": "2025-10-01",
+    "outfile": "PPN_0825_adds.csv"
+}

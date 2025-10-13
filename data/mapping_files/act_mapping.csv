@@ -1,0 +1,36 @@
+﻿provider_npi,NPI
+first_name,First Name
+middle_name,
+middle_initial,Middle Name
+last_name,Last Name
+full_name,Full Name
+degree,Degree
+dob,
+gender,
+specialty_1,Specialty 1
+specialty_2,
+specialty_3,
+taxonomy_1,
+taxonomy_2,
+taxonomy_3,
+primary_address,primary_address
+address_line1,Address Line 1
+address_line2,Address Line 2
+city,City
+state,State
+zip_code,Zip Code
+phone,Phone
+fax,Fax
+billing_npi,Billing NPI
+billing_address_line1,Billing Address 1
+billing_address_line2,
+billing_city,Billing City
+billing_state,Billing State
+billing_zip,Billing Zip
+tax_id,TIN
+practice_name,Practice
+practice_url,Practice URL
+pay_to_name,Practice Legal Name
+effective_date,term_date
+note,note
+action, action

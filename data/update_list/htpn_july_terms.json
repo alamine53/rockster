@@ -1,0 +1,11 @@
+{
+    "data_dir": "data",
+    "filename": "HTPN TERMED PROVIDERS JULY2025_08042025.xlsx",
+    "sheet_name": "Table_1",
+    "mapping_file": "htpn_mapping_terms.csv",
+    "contract_id": "C010",
+    "contracting_entity": "Baylor Scott and White Health",
+    "action": "term",
+    "effective_date": "2025-10-01",
+    "outfile": "HTPN_july_terms.csv"
+}

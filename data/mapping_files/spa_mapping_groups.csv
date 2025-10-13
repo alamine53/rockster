@@ -1,0 +1,38 @@
+﻿provider_npi,NPI #
+first_name,First Name
+middle_name,
+middle_initial,Middle Name
+last_name,Last Name
+full_name,
+degree,Title
+dob,
+gender,Gender
+specialty_1,Primary Specialty
+specialty_2,Secondary Specialty
+specialty_3,Tertiary Specialty
+taxonomy_1,
+taxonomy_2,
+taxonomy_3,
+provider_type,
+primary_address,
+address_line1,Primary Address
+address_line2,Suite
+city,City
+state,State
+zip_code,Zip Code
+phone,Phone
+fax,Fax
+billing_npi,Group - Type 2 NPI
+billing_address_line1,Billing Address
+billing_address_line2,Billing Suite
+billing_city,Billing City
+billing_state,Billing State
+billing_zip,Billing Zip Code
+tax_id,Group - Tax ID#
+practice_name,Group Name
+practice_url,
+pay_to_name,Group - Tax ID Name
+effective_date,CP Wellness Eff Date
+pcp_provider,
+note,cpw_note
+action,action

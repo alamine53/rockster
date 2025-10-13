@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+venv/
+*.egg
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+output/*/
+data/*/processed/
+data/*/raw/
+rosters/checkpoints/
+*.log
+
+# Keep directory structure but ignore contents
+!output/.gitkeep
+!data/.gitkeep
+!rosters/.gitkeep
+

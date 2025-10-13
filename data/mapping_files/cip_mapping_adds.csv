@@ -1,0 +1,40 @@
+﻿provider_npi,NPI
+first_name,FIRST NAME
+middle_initial,MIDDLE INITIAL
+last_name,LAST NAME
+degree,DEGREE
+dob,DATE OF BIRTH
+gender,
+provider_type,Role
+is_pcp,PCP (Y/N)
+specialty_1,PRIMARY SPECIALTY
+specialty_2,
+specialty_3,
+taxonomy_1,Taxonomy1Code
+taxonomy_2,Taxonomy2Code
+taxonomy_3,
+primary_address,Primary Provider Location
+address_line1,PRIMARY OFFICE ADDRESS
+address_line2,
+city,PRIMARY CITY
+state,STATE
+zip_code,ZIP
+phone,PHONE NUMBER
+fax,FAX NUMBER
+billing_npi,Group NPI
+billing_address_line1,PRIMARY BILLING ADDRESS
+billing_address_line2,
+billing_city,Billing City
+billing_state,Billing State
+billing_zip,Billing Zip
+tax_id,TAX ID
+practice_name,TIN OWNER NAME
+practice_url,
+pay_to_name,PRIMARY BILLING NAME
+effective_date,EFFECTIVE DATE
+billing_contact,
+billing_contact_email,
+billing_contact_phone,
+action,
+note,note
+directory_listing,Directory Listing
