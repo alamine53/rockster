@@ -35,7 +35,4 @@ rosters/checkpoints/
 *.log
 
 # Keep directory structure but ignore contents
-!output/.gitkeep
-!data/.gitkeep
-!rosters/.gitkeep
-
+output
