@@ -9,7 +9,35 @@
     "tag": "BSWH_HTPN"
     },
     {
-    "filename": "MCHP USDP Full Provider Roster.xlsx",
+    "filename": "2025-10-02 HTPN New Provider Adds - Mark Cuban.xlsx",
+    "sheet_name": "Mark Cuban",
+    "mapping_file": "htpn_mapping_adds.csv",
+    "contract_id": "C010",
+    "action": "add",
+    "note": "",
+    "tag": "BSWH_HTPN"
+    },
+    {
+    "filename": "HTPN September 2025 New Provider Adds - Mark Cuban.xlsx",
+    "sheet_name": "Mark Cuban",
+    "mapping_file": "htpn_mapping_adds.csv",
+    "contract_id": "C010",
+    "action": "add",
+    "note": "",
+    "tag": "BSWH_HTPN"
+    },
+    {
+    "filename": "HTPN TERMED PROVIDERS SEPTEMBER_2025_10032025.xlsx",
+    "sheet_name": "Table_1",
+    "mapping_file": "htpn_mapping_terms.csv",
+    "contract_id": "C010",
+    "action": "term",
+    "note": "",
+    "tag": "BSWH_HTPN"
+    },
+
+    {
+    "filename": "2025-09-29 MCHP USDP Full Provider Roster.xlsx",
     "sheet_name": "ADD TERMS CHANGES",
     "mapping_file": "usderm_mapping.csv",
     "contract_id": "C006",
@@ -137,7 +165,7 @@
     {
     "filename": "Managed Care Provider Update 08.22.25.xlsx",
     "sheet_name": "TERM PROVIDERS",
-    "mapping_file": "ctx_mapping_adds.csv",
+    "mapping_file": "ctx_mapping_terms.csv",
     "contract_id": "C010",
     "action": "term",
     "note": "retroactive from missed August updates",
@@ -245,7 +273,7 @@
     {
     "filename": "Managed Care Provider Update 10.03.25.xlsx",
     "sheet_name": "TERM PROVIDERS",
-    "mapping_file": "ctx_mapping_adds.csv",
+    "mapping_file": "ctx_mapping_terms.csv",
     "contract_id": "C010",
     "action": "term",
     "note": "current month terms",
@@ -277,6 +305,105 @@
     "action": "add & term",
     "note": "previous months adds & terms",
     "tag": "TXONCO"
-    }    
+    },
+    {
+    "filename": "MCCH Combined CIP September 2025 Monthly Report (MOD).xlsx",
+    "sheet_name": "NEW ADDS",
+    "mapping_file": "bswh_cip_mapping_adds.csv",
+    "contract_id": "C010",
+    "action": "add",
+    "note": "2025 SEP Adds",
+    "tag": "BSWH_CIP"
+    },
+    {
+    "filename": "MCCH Combined CIP September 2025 Monthly Report (MOD).xlsx",
+    "sheet_name": "TERMS",
+    "mapping_file": "bswh_cip_mapping_terms.csv",
+    "contract_id": "C010",
+    "action": "term",
+    "note": "2025 SEP Terms",
+    "tag": "BSWH_CIP"
+    },
+    {
+    "filename": "Combined CIP July 2025 Monthly Report (MOD).xlsx",
+    "sheet_name": "NEW ADDS",
+    "mapping_file": "bswh_cip_mapping_adds.csv",
+    "contract_id": "C010",
+    "action": "add",
+    "note": "2025 JUL Adds",
+    "tag": "BSWH_CIP"
+    },
+    {
+    "filename": "Combined CIP July 2025 Monthly Report (MOD).xlsx",
+    "sheet_name": "TERMS",
+    "mapping_file": "bswh_cip_mapping_terms.csv",
+    "contract_id": "C010",
+    "action": "term",
+    "note": "2025 JUL Terms",
+    "tag": "BSWH_CIP"
+    },
+    {
+    "filename": "Combined CIP August 2025 Monthly Report (MOD).xlsx",
+    "sheet_name": "NEW ADDS",
+    "mapping_file": "bswh_cip_mapping_adds.csv",
+    "contract_id": "C010",
+    "action": "add",
+    "note": "2025 AUG Adds",
+    "tag": "BSWH_CIP"
+    },
+    {
+    "filename": "Combined CIP August 2025 Monthly Report (MOD).xlsx",
+    "sheet_name": "TERMS",
+    "mapping_file": "bswh_cip_mapping_terms.csv",
+    "contract_id": "C010",
+    "action": "term",
+    "note": "2025 AUG Terms",
+    "tag": "BSWH_CIP"
+    },
+    {
+    "filename": "DNEPH April 2025 Adds (MOD).xlsx",
+    "sheet_name": "Sheet1",
+    "mapping_file": "aspen_dneph.csv",
+    "contract_id": "C004",
+    "action": "add",
+    "note": "",
+    "tag": "ASPEN DNEPH"
+    },
+    {
+    "filename": "9-23-2025-PPN Payor Tracker-Termination Notifications.xlsx",
+    "sheet_name": "Sheet 1",
+    "mapping_file": "ppn_mapping_terms.csv",
+    "contract_id": "C007",
+    "action": "term",
+    "note": "2025 SEP 23 Terms",
+    "tag": "PPN"
+    }  ,
+    {
+    "filename": "10-10-2025-PPN Payor Tracker-Termination Notifications.xlsx",
+    "sheet_name": "Sheet 1",
+    "mapping_file": "ppn_mapping_terms.csv",
+    "contract_id": "C007",
+    "action": "term",
+    "note": "2025 OCT 10 Terms",
+    "tag": "PPN"
+    }  ,
+    {
+    "filename": "10-10-2025-PPN-MCC Health Provider Delegated Information-Opt Ins.xlsx",
+    "sheet_name": "Sheet 1",
+    "mapping_file": "ppn_mapping_adds.csv",
+    "contract_id": "C007",
+    "action": "add",
+    "note": "2025 OCT 10 Adds",
+    "tag": "PPN"
+    },
+    {
+    "filename": "PPN-ColonRectal Termination Request-MCC Health-11-1-2025.xlsx",
+    "sheet_name": "Sheet 1",
+    "mapping_file": "ppn_mapping_terms.csv",
+    "contract_id": "C007",
+    "action": "term",
+    "note": "Switching to PPN",
+    "tag": "PPN"
+    }                             
 
 ]

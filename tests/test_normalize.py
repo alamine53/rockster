@@ -35,6 +35,50 @@ class TestGenerateOutputFilename:
         }
         result = _generate_output_filename(item)
         assert result == 'C010_ADDANDTERM_Provider_Roster_2025.csv'
+    
+    def test_filename_with_sheet_name(self):
+        """Test filename with sheet name."""
+        item = {
+            'contract_id': 'C010',
+            'action': 'add',
+            'filename': 'Provider Roster.xlsx',
+            'sheet_name': 'Sheet2'
+        }
+        result = _generate_output_filename(item)
+        assert result == 'C010_ADD_Sheet2_Provider_Roster.csv'
+    
+    def test_filename_with_sheet_name_special_chars(self):
+        """Test filename with sheet name containing special characters."""
+        item = {
+            'contract_id': 'C010',
+            'action': 'add',
+            'filename': 'Provider Roster.xlsx',
+            'sheet_name': 'Sheet-Name (2025)'
+        }
+        result = _generate_output_filename(item)
+        assert result == 'C010_ADD_Sheet_Name_2025_Provider_Roster.csv'
+    
+    def test_filename_with_default_sheet(self):
+        """Test filename with default sheet (should not include sheet name)."""
+        item = {
+            'contract_id': 'C010',
+            'action': 'add',
+            'filename': 'Provider Roster.xlsx',
+            'sheet_name': 0
+        }
+        result = _generate_output_filename(item)
+        assert result == 'C010_ADD_Provider_Roster.csv'
+    
+    def test_filename_with_none_sheet(self):
+        """Test filename with None sheet (should not include sheet name)."""
+        item = {
+            'contract_id': 'C010',
+            'action': 'add',
+            'filename': 'Provider Roster.xlsx',
+            'sheet_name': None
+        }
+        result = _generate_output_filename(item)
+        assert result == 'C010_ADD_Provider_Roster.csv'
 
 
 class TestNormalizeActionColumn:

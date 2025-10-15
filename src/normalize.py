@@ -88,7 +88,21 @@ def normalize_roster_item(
     _validate_names(df)
     
     # Create optional columns if missing
-    for col in ['address_line2', 'billing_address_line2', 'middle_initial']:
+    optional_cols = ['address_line2', 'billing_address_line2', 'middle_initial', 'taxonomy_1']
+    
+    # For TERM actions, many additional fields are optional
+    if item['action'] and 'term' in item['action'].lower():
+        optional_cols.extend([
+            # Basic fields that are optional for TERM
+            'practice_name', 'degree', 'specialty_1',
+            # Address fields
+            'address_line1', 'city', 'state', 'zip_code', 'phone',
+            # Billing fields
+            'billing_address_line1', 'billing_city', 'billing_state', 
+            'billing_zip', 'billing_npi'
+        ])
+    
+    for col in optional_cols:
         if col not in df.columns:
             df[col] = ''
     
@@ -110,32 +124,41 @@ def normalize_roster_item(
     # Format middle initial (single uppercase letter)
     df['middle_initial'] = df['middle_initial'].apply(format_middle_initial)
     
-    # Format states (2-letter codes)
-    df['state'] = df['state'].apply(format_state)
-    df['billing_state'] = df['billing_state'].apply(format_state)
+    # Format states (2-letter codes) - only if columns exist
+    if 'state' in df.columns:
+        df['state'] = df['state'].apply(format_state)
+    if 'billing_state' in df.columns:
+        df['billing_state'] = df['billing_state'].apply(format_state)
     
-    # Format cities (title case)
-    df['city'] = df['city'].apply(format_city)
-    df['billing_city'] = df['billing_city'].apply(format_city)
+    # Format cities (title case) - only if columns exist
+    if 'city' in df.columns:
+        df['city'] = df['city'].apply(format_city)
+    if 'billing_city' in df.columns:
+        df['billing_city'] = df['billing_city'].apply(format_city)
     
-    # Format zip codes (5-digit)
-    df['zip_code'] = df['zip_code'].apply(format_zip_code)
-    df['billing_zip'] = df['billing_zip'].apply(format_zip_code)
+    # Format zip codes (5-digit) - only if columns exist
+    if 'zip_code' in df.columns:
+        df['zip_code'] = df['zip_code'].apply(format_zip_code)
+    if 'billing_zip' in df.columns:
+        df['billing_zip'] = df['billing_zip'].apply(format_zip_code)
     
-    # Format phone numbers
-    df['phone'] = df['phone'].apply(format_phone)
+    # Format phone numbers - only if columns exist
+    if 'phone' in df.columns:
+        df['phone'] = df['phone'].apply(format_phone)
     if 'fax' in df.columns:
         df['fax'] = df['fax'].apply(format_phone)
     
-    # Format PO Box in billing addresses
-    df['billing_address_line1'] = df['billing_address_line1'].apply(format_po_box)
+    # Format PO Box in billing addresses - only if column exists
+    if 'billing_address_line1' in df.columns:
+        df['billing_address_line1'] = df['billing_address_line1'].apply(format_po_box)
     
     # Validate all required fields are present
-    _validate_required_fields(df, item['filename'])
+    _validate_required_fields(df, item['filename'], item['action'])
     
-    # Select and order columns
+    # Select and order columns - only include columns that exist
     all_fields = basic_fields + address_fields + billing_fields + metadata_fields
-    processed_df = df[all_fields]
+    available_fields = [col for col in all_fields if col in df.columns]
+    processed_df = df[available_fields]
     
     # Save to CSV
     processed_df.to_csv(outpath, index=False)
@@ -238,7 +261,16 @@ def _generate_output_filename(item: Dict) -> str:
     filename = filename.replace(' ', '_').replace('-', '_').replace('/', '_')
     filename = filename.replace('(', '').replace(')', '')
     action_part = item['action'].upper().replace(' ', '').replace('&', 'AND')
-    return f"{item['contract_id']}_{action_part}_{filename}"
+    
+    # Include sheet name if it's not the default sheet (0 or None)
+    sheet_name = item.get('sheet_name')
+    if sheet_name and sheet_name != 0 and sheet_name != '0':
+        # Clean sheet name for filename
+        clean_sheet = str(sheet_name).replace(' ', '_').replace('-', '_').replace('/', '_')
+        clean_sheet = clean_sheet.replace('(', '').replace(')', '')
+        return f"{item['contract_id']}_{action_part}_{clean_sheet}_{filename}"
+    else:
+        return f"{item['contract_id']}_{action_part}_{filename}"
 
 
 def _normalize_action_column(
@@ -327,10 +359,25 @@ def _validate_names(df: pd.DataFrame):
             print(f"⚠ Warning: {count} rows have empty values in '{col}'")
 
 
-def _validate_required_fields(df: pd.DataFrame, filename: str):
-    """Validate that all required fields are present in the dataframe."""
-    all_required_fields = basic_fields + billing_fields + address_fields + metadata_fields
-    missing_fields = [col for col in all_required_fields if col not in df.columns]
+def _validate_required_fields(df: pd.DataFrame, filename: str, action: str = None):
+    """
+    Validate that all required fields are present in the dataframe.
+    For TERM actions, only core identifiers and metadata are required.
+    """
+    if action and 'term' in action.lower():
+        # For TERM actions, only require core identifiers and metadata
+        required_fields = [
+            'contract_id', 'action', 'effective_date',
+            'tax_id', 'provider_npi',
+            'first_name', 'last_name',
+            'tag', 'source_file', 'note'
+        ]
+        print(f"ℹ TERM action: only core identifiers and metadata required")
+    else:
+        # For ADD actions, all fields are required
+        required_fields = basic_fields + address_fields + billing_fields + metadata_fields
+    
+    missing_fields = [col for col in required_fields if col not in df.columns]
     
     if missing_fields:
         raise ValueError(
@@ -338,7 +385,7 @@ def _validate_required_fields(df: pd.DataFrame, filename: str):
             f"Missing: {missing_fields}"
         )
     
-    print(f"✓ All required fields present ({len(all_required_fields)} columns)")
+    print(f"✓ All required fields present ({len(required_fields)} columns)")
 
 
 def _add_overlap_checks_to_file(filepath: str, roster_df: pd.DataFrame):
