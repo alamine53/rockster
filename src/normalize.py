@@ -48,7 +48,8 @@ def normalize_roster_item(
         9. Save to CSV
     """
     print(f"\n{'='*80}")
-    print(f"Processing: {item['filename']}")
+    sheet_info = f" (Sheet: {item['sheet_name']})" if item.get('sheet_name') and item['sheet_name'] != 0 and item['sheet_name'] != '0' else ""
+    print(f"Processing: {item['filename']}{sheet_info}")
     print(f"{'='*80}")
     
     # Construct file paths
@@ -162,7 +163,8 @@ def normalize_roster_item(
     
     # Save to CSV
     processed_df.to_csv(outpath, index=False)
-    print(f"✓ Saved processed file: {outfile}")
+    sheet_info = f" (Sheet: {item['sheet_name']})" if item.get('sheet_name') and item['sheet_name'] != 0 and item['sheet_name'] != '0' else ""
+    print(f"✓ Saved processed file: {outfile}{sheet_info}")
     print(f"  Total rows: {len(processed_df)}")
     print(f"  Actions: {processed_df['action'].value_counts().to_dict()}")
     
@@ -220,6 +222,7 @@ def normalize_rosters(
     errors = []
     
     for i, item in enumerate(config, 1):
+        sheet_info = f" (Sheet: {item['sheet_name']})" if item.get('sheet_name') and item['sheet_name'] != 0 and item['sheet_name'] != '0' else ""
         print(f"\n[{i}/{len(config)}]", end=" ")
         try:
             outpath = normalize_roster_item(
@@ -235,7 +238,8 @@ def normalize_rosters(
             
             processed_files.append(outpath)
         except Exception as e:
-            error_msg = f"Failed to process {item['filename']}: {str(e)}"
+            sheet_info = f" (Sheet: {item['sheet_name']})" if item.get('sheet_name') and item['sheet_name'] != 0 and item['sheet_name'] != '0' else ""
+            error_msg = f"Failed to process {item['filename']}{sheet_info}: {str(e)}"
             print(f"✗ {error_msg}")
             errors.append(error_msg)
     
